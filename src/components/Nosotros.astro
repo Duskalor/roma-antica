@@ -1,0 +1,25 @@
+---
+import Subtitulo from './Subtitulo.astro';
+import nosotros from '../../public/nosotros.png';
+---
+
+<section>
+  <Subtitulo title='NOSOTROS' />
+
+  <div class='pr-2'>
+    <div class='py-5 pl-5 flex gap-[18px]'>
+      <img
+        src={nosotros.src}
+        alt='nosotros'
+        class='rounded-xl h-[160px]'
+        width='180'
+      />
+      <p class='text-white text-[10px] text-center'>
+        Bienvenidos a Roma Antica, el hogar de la auténtica pizza italiana en
+        Cusco. Desde el primer día que abrimos nuestras puertas, nos
+        comprometimos a llevar a nuestros clientes una experiencia culinaria
+        única, donde cada bocado es una celebración de sabor y tradición.
+      </p>
+    </div>
+  </div>
+</section>

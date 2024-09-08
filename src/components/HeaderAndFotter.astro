@@ -1,0 +1,30 @@
+---
+import logo from '../../public/logo.png';
+const { value = false } = Astro.props;
+---
+
+<section class='bg-headerandfooter px-5 py-2'>
+  <div class='flex justify-between gap-x-2'>
+    {!value && <img src={logo.src} alt='logo' width='90' height='90' />}
+    <nav class='flex items-center'>
+      <div class='flex list-none justify-center bg-link'>
+        <li
+          class='w-[65px] h-[30px] text-xs font-bold justify-center flex items-center border-2 px-5 py-0 border-black'
+        >
+          <a href='/'>INICIO</a>
+        </li>
+        <li
+          class='w-[70px] h-[30px] text-xs font-bold flex justify-center items-center border-2 px-5 py-0 border-black'
+        >
+          <a href='/carta'>CARTA</a>
+        </li>
+        <li
+          class='w-[100px] h-[30px] text-xs font-bold flex justify-center items-center border-2 px-5 py-0 border-black'
+        >
+          <a href='/contacto'>CONTACTANOS</a>
+        </li>
+      </div>
+    </nav>
+    {value && <img src={logo.src} alt='logo' width='90' height='90' />}
+  </div>
+</section>

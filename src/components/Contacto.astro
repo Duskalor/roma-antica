@@ -1,0 +1,17 @@
+---
+import Subtitulo from './Subtitulo.astro';
+import mapa from '../../public/mapa.jpg';
+const { center } = Astro.props;
+---
+
+<section>
+  <Subtitulo title='CONTACTOS' center={center} />
+  <div class='px-2 py-5 flex flex-col gap-4'>
+    <div class='flex justify-center'>
+      <img src={mapa.src} alt='mapa' width='240' class='h-[200px]' />
+    </div>
+    <p class='text-white text-center font-bold text-wrap'>
+      A 3 APV. VILLA SAN JOSE 1ER PISO EN PIZZERIA SAN SEBASTIÁN - CUSCO -CUSCO
+    </p>
+  </div>
+</section>
